@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - LMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+
+        
+        <nav class="bg-red-600 flex flex-col md:flex-row justify-between items-center p-4">
+            <h1 class="text-2xl text-white font-bold mb-4 md:mb-0">LMS</h1>
+            <div class="flex space-x-4">
+                <a href="{% url 'login' %}" class="text-white px-4 py-2 rounded-md hover:bg-red-700">Login</a>
+                <a href="{% url 'auths' %}" class="text-white px-4 py-2 rounded-md hover:bg-red-700">Sign Up</a>
+            </div>
+        </nav>
+
+
+        <div class="flex-grow flex items-center justify-center flex-col sm:flex-row">
+            <div class="text-center p-5">
+                <h1 class="text-4xl mt-12">Welcome to LMS!</h1>
+                <p class="text-center text-gray-600">Learn, Share, and Manage</p>
+            </div>
+            <img class="p-5 rounded-2xl shadow-lg  max-w-full sm:max-w-2xl" src="https://img.freepik.com/free-vector/isometric-online-education-illustration_1284-32914.jpg?w=740&t=st=1719915744~exp=1719916344~hmac=378130ca87a02171ae00a976305093ecc6b75ea0dd0524a8cba49583db2a2538" alt="Online education illustration">
+        </div>
+
+    </div>
+</body>
+</html>

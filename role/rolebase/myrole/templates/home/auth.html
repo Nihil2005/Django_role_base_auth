@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+        <h2 class="text-3xl font-bold mb-6 text-center">Welcome to LMS</h2>
+        <div class="space-y-4">
+            <a href="{% url 'hod_signup' %}" class="block w-full text-center py-2 px-4 bg-red-600 text-white rounded-md hover:bg-red-700">Sign Up as HOD</a>
+            <a href="{% url 'principal_signup' %}" class="block w-full text-center py-2 px-4 bg-red-600 text-white rounded-md hover:bg-red-700">Sign Up as Principal</a>
+            <a href="{% url 'student_signup' %}" class="block w-full text-center py-2 px-4 bg-red-600 text-white rounded-md hover:bg-red-700">Sign Up as Student</a>
+            <a href="{% url 'staff_signup' %}" class="block w-full text-center py-2 px-4 bg-red-600 text-white rounded-md hover:bg-red-700">Sign Up as Staff</a>
+        </div>
+    </div>
+</body>
+</html>
